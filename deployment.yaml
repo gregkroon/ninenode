@@ -14,8 +14,10 @@ spec:
       labels:
         app: nodeapp
     spec:
+      imagePullSecrets:
+      - name: regcred  
       containers:
-      - name: nodeserver
-        image: munkys123/ninenode:latest
+      - name: goapp
+        image: {{.Values.image }}
         ports:
         - containerPort: 3000
