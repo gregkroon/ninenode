@@ -33,7 +33,7 @@ pipeline:
                   name: BuildAndPushDockerRegistry
                   identifier: BuildAndPushDockerRegistry
                   spec:
-                    connectorRef: account.DockerHubKroon
+                    connectorRef: account.dockerhubkroon
                     repo: munkys123/ninenode
                     tags:
                       - <+pipeline.sequenceId>
