@@ -34,7 +34,7 @@ pipeline:
                   identifier: BuildAndPushDockerRegistry
                   spec:
                     connectorRef: account.DockerHubKroon
-                    repo: ninenode
+                    repo: munkys123/ninenode
                     tags:
                       - <+pipeline.sequenceId>
                     caching: true
