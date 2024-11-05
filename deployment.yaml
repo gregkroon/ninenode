@@ -28,8 +28,10 @@ spec:
       labels:
         app: nodeapp
     spec:
-      imagePullSecrets:
-      - name: regcred  
+      {{- if .Values.dockercfg}}  
+      imagePullSecrets:  
+      - name: {{.Values.name}}-dockercfg  
+      {{- end}}  
       containers:
       - name: goapp
         image: {{.Values.image }}
