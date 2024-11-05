@@ -1,2 +1,4 @@
 image: <+artifact.image> 
 namespace: nine
+createNamespace: true  
+dockercfg: <+artifact.imagePullSecret>
