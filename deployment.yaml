@@ -14,6 +14,7 @@ type: kubernetes.io/dockercfg
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: {{ .Values.namespace}}
   name: nodeapp-deployment
   labels:
     app: nodeapp
