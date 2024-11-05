@@ -2,3 +2,4 @@ image: <+artifact.image>
 namespace: nine
 createNamespace: true  
 dockercfg: <+artifact.imagePullSecret>
+name: goapp
