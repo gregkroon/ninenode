@@ -1,5 +1,5 @@
 image: <+artifact.image> 
-namespace: nine
+namespace: development
 createNamespace: true  
 dockercfg: <+artifact.imagePullSecret>
 name: nodeapp
